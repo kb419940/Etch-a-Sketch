@@ -19,6 +19,18 @@ for (let i = 1; i <= 16; i++) {
     container.appendChild(row);    
 }
 
+const gridItems = document.querySelectorAll('.cell');
+
+gridItems.forEach(gridItem => {
+  gridItem.addEventListener('mouseover', () => {
+    gridItem.classList.add('hover-effect');
+  });
+  
+  gridItem.addEventListener('mouseleave', () => {
+    gridItem.classList.remove('hover-effect');
+  });
+});
+
 
 
 
